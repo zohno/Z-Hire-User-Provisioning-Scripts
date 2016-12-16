@@ -4,8 +4,8 @@ import-Module .\CitrixGotoUserAPI.dll
 import-Module .\Newtonsoft.json.dll
 
 $DomainUserName = args[0]
-$Password = args[1]
-$EmailId = args[2]
+$Password = 'Password'
+$EmailId = 'EmailId'
 
 $DomainUserInfo = Get-CitrixGoToUserAPI -AdminUser $DomainUserName -Password $Password
 $Connection = Get-CitrixGoToUserAPIByToken $DomainUserInfo.AccessToken GLOBAL
