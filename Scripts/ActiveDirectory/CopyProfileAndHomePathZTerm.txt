@@ -1,8 +1,8 @@
 [Reflection.Assembly]::LoadWithPartialName( "System.IO.Compression.FileSystem" )
 
-$SamAccountName = = args[0]
-$DesPath = args[1]
-$DesHomePath = args[2]
+$SamAccountName = args[0]
+$DesPath = 'DestinationProfilePathDirectory'
+$DesHomePath = 'DestinationHomePathDirectory'
 
 
 $UserProperties = Get-ADUser $SamAccountName -properties scriptpath, homedrive, homedirectory, profilepath
