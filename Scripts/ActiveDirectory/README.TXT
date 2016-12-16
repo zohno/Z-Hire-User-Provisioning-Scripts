@@ -1,11 +1,11 @@
-Example program(R) Version 1.0 12/15/2016
+Example program(R) Version 1.0 12/16/2016
 
 GENERAL USAGE NOTES
 --------------------
 
-- Before copying all the files to our local system we need to pass the 3 parameters to the script. First parameter will be the SamAccountName. Second parameter will be   the destination path to where it will copy the files of profile path directory of the user and the third parameter will be the destination path to where it will copy   the files of home path directory of the user.
+- Before copying all the files to our local system we need to pass 1 parameter to the script which will ne the SamAccountName. After that   you have to give the destination profile path and destination home path where the script will copy the data.
 
-- You can directly mention the values of args[0], args[1] and args[2] in the sigle quote ('') and run the script.
+- You can directly mention the destination path values in the sigle quote (Like: 'C:\Users\DELL\Desktop') and run the script.
 
 
 Contact Information
