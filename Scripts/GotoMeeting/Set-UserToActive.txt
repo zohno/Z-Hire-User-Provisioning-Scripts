@@ -3,9 +3,9 @@ write-host "Before enable/disable the user of GotoMeeting you should download 2 
 import-Module .\CitrixGotoUserAPI.dll
 import-Module .\Newtonsoft.json.dll
 
-$DomainUserName = args[0]
+$DomainUserName = 'DomainUserName'
 $Password = 'Password'
-$EmailId = 'EmailId'
+$EmailId = args[0]
 
 $DomainUserInfo = Get-CitrixGoToUserAPI -AdminUser $DomainUserName -Password $Password
 $Connection = Get-CitrixGoToUserAPIByToken $DomainUserInfo.AccessToken GLOBAL
